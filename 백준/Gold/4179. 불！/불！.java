@@ -9,6 +9,8 @@ public class Main {
     static int C;
     static char[][] map;
 
+    static int[][] dirs = new int[][]{{1, 0}, {0, 1}, {-1, 0}, {0, -1}};
+
     static class Point {
         int x;
         int y;
@@ -80,7 +82,6 @@ public class Main {
                 }
             }
 
-            int[][] dirs = new int[][]{{1, 0}, {0, 1}, {-1, 0}, {0, -1}};
             for (int[] dir : dirs) {
                 int nx = x + dir[0];
                 int ny = y + dir[1];
